@@ -124,10 +124,15 @@ body{
 @media (max-width:900px){
 	.skills-grid{grid-template-columns:repeat(2,1fr)}
 	.projects-grid{grid-template-columns:1fr}
-	.hero{flex-direction:column;text-align:center}
+	.hero{flex-direction:column;text-align:center;padding:28px 18px}
 	.hero-sub{max-width:100%}
 	.about-grid{grid-template-columns:1fr}
 	.hero-image img{width:180px;height:180px}
+	/* About section: center content and shrink photo on smaller screens */
+	.about.container{padding-top:12px;padding-bottom:20px}
+	.about-body{margin:0 auto;text-align:center}
+	.about-photo{display:flex;justify-content:center}
+	.about-photo img{width:160px;height:160px}
 }
 
 @media (max-width:720px){
