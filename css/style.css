@@ -122,17 +122,31 @@ body{
 
 /* RESPONSIVE */
 @media (max-width:900px){
+	.container{padding:28px 16px}
 	.skills-grid{grid-template-columns:repeat(2,1fr)}
 	.projects-grid{grid-template-columns:1fr}
 	.hero{flex-direction:column;text-align:center;padding:28px 18px}
+	.hero-title{font-size:1.9rem}
 	.hero-sub{max-width:100%}
 	.about-grid{grid-template-columns:1fr}
-	.hero-image img{width:180px;height:180px}
+	.hero-image img{width:160px;height:160px}
 	/* About section: center content and shrink photo on smaller screens */
 	.about.container{padding-top:12px;padding-bottom:20px}
 	.about-body{margin:0 auto;text-align:center}
 	.about-photo{display:flex;justify-content:center}
-	.about-photo img{width:160px;height:160px}
+	.about-photo img{width:140px;height:140px}
+}
+
+@media (max-width:480px){
+	/* very small screens: stack, reduce padding and font sizes */
+	.container{padding:18px 12px}
+	.hero{padding:20px 12px;gap:18px}
+	.hero-title{font-size:1.4rem}
+	.hero-role{margin:4px 0}
+	.hero-image img{width:120px;height:120px}
+	.about.container{padding-top:8px;padding-bottom:12px}
+	.about-photo img{width:120px;height:120px}
+	.skills-grid{grid-template-columns:1fr}
 }
 
 @media (max-width:720px){
